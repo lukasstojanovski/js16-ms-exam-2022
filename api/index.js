@@ -7,11 +7,11 @@ const api = express();
 api.use(express.json());
 
 api.get("/api/portable-computer", computers.getAll);
-api.post("/api/portable-computer", computers.addPc);
-api.get("/api/portable-computer/:id", computers.getById);
-api.put("/api/portable-computer/:id", computers.addById);
-api.patch("/api/portable-computer/:id", computers.updatePc);
-api.delete("/api/portable-computer/:id", computers.removePc);
+api.post("/api/portable-computer", computers.create);
+api.get("/api/portable-computer/:id", computers.getOne);
+api.put("/api/portable-computer/:id", computers.update);
+api.patch("/api/portable-computer/:id", computers.updatePartial);
+api.delete("/api/portable-computer/:id", computers.remove);
 
 api.listen(config.get("service").port, err => {
     if(err) return console.log(err);
