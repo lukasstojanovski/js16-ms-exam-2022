@@ -1,4 +1,4 @@
-const express = require("rexpress");
+const express = require("express");
 const config = require("./pkg/config")
 const computers = require("./handlers/computers")
 
