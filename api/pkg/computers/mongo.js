@@ -1,0 +1,25 @@
+const mongoose = require("mongoose");
+
+const Computer = mongoose.model(
+    "computers",
+    {
+        brand: String,
+        model: String,
+        cpu_cores: Number,
+        ram: Number,
+        disk: String,
+        price: Number,
+        stores: Array,
+        num_ports: Object,
+        created: Date
+    },
+    "computers"
+);
+
+const addPc = async (computer) => {
+    let pc = new Computer(computer)
+};
+
+module.exports = {
+    addPc
+}
