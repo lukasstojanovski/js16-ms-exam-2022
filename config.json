@@ -1,0 +1,11 @@
+{
+    "service": {
+        "port": 3000
+    },
+    "db": {
+        "host":"cluster0.0gbsm.mongodb.net",
+        "username": "Lukas",
+        "password": "Lukas123",
+        "dbname": "g16"
+    }
+}
